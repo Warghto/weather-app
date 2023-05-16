@@ -11,21 +11,21 @@ export default function App() {
         <div className="top">
           <div className="location">London</div>
           <div className="temp">
-            <h1>60 `C</h1>
+            <h1>60 °C</h1>
           </div>
           <div className="description">Windy</div>
         </div>
         <div className="bottom">
           <div className="feels">
-            <p className="bold">64 `C</p>
+            <p className="bold">64 °C</p>
             <p>Feels Like</p>
           </div>
           <div className="humidity">
-            <p>20%</p>
+            <p className="bold">20%</p>
             <p>Humidity</p>
           </div>
           <div className="wind">
-            <p>12 MPH</p>
+            <p className="bold">12 MPH</p>
             <p>Wind Speed</p>
           </div>
         </div>
