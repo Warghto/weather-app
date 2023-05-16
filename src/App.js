@@ -4,11 +4,32 @@ import "./styles.css";
 import axios from "axios";
 
 export default function App() {
-  // const URL = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=d45bf05f66307ef1483c9b1231dd4b44'
+  const [data, setData] = useState({});
+  const [location, setLocation] = useState('')
+
+   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=d45bf05f66307ef1483c9b1231dd4b44`
+  const searchLocation = (event) =>{
+    if(event.key === 'Enter'){
+    axios.get(URL).then((res)=>{
+    setData(res.data),
+    (console.log(res.data))
+      })
+    }
+  }
+  console.log(location)
   return (
     <div className="app">
       <div className="container">
         <div className="top">
+          <div className="search">
+            <input
+                value={location}
+                onChange={event=>setLocation(event.target.value)}
+                onKeyPress={searchLocation}
+                placeholder={"Enter City..."}
+                type="text"
+            />
+          </div>
           <div className="location">London</div>
           <div className="temp">
             <h1>60 °C</h1>
