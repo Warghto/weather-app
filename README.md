@@ -9,6 +9,8 @@ Humidity: Stay informed about the level of humidity in the air. Humidity can gre
 Wind Speed: Be aware of the wind speed in your area. Whether you're planning outdoor activities or simply want to know what to expect, this feature keeps you informed about the strength of the wind.
 
 Feels Like: In addition to the actual temperature, the app provides you with the "feels like" temperature. This value takes into account various factors such as wind chill or heat index, giving you a better understanding of how the weather will actually feel on your skin.
+
+
 https://weather-app-blue-seven.vercel.app/ 
 ![image](https://github.com/Warghto/weather-app/assets/116073567/ff4f9b29-6d22-4b31-8c6e-1347758757f8)
 
